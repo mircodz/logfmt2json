@@ -32,5 +32,10 @@ func main() {
 		if _, err := os.Stdout.Write(bs); err != nil {
 			continue
 		}
+
+		if _, err := os.Stdout.Write([]byte("\n")); err != nil {
+			continue
+		}
+
 	}
 }
